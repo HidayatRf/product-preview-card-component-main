@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	padding: 0 1em;
+	justify-items: center;
+	row-gap: 30px;
+	background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+	display: grid;
+}
+
+.img-header {
+	width: 100%;
+	border-radius: 1em 1em 0 0;
+	min-height: 350px;
+	background-image: url(images/image-product-mobile.jpg);
+}
+
+.text-content {
+	display: grid;
+	row-gap: 20px;
+	background-color: white;
+	padding: 2em;
+}
+
+.text-content p {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	color: rgba(99, 99, 99, 0.74);
+}
+
+.category-product {
+	letter-spacing: .3em;
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+}
+
+.text-content h1 {
+	font-family: 'Fraunces';
+}
+
+.price {
+	font-family: 'Fraunces';
+	color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+	font-size: .82rem;
+	margin-left: 10px;
+	color: rgba(99, 99, 99, 0.74);
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 1.2em 0;
+	outline: none;
+	border: none;
+	border-radius: .6em;
+	background-color: hsl(158, 36%, 37%);
+}
+
+.button:hover {
+	background-color: hsl(158, 36%, 20%);
+}
+
+.button:active {
+	background-color: hsl(158, 36%, 20%);
+}
+
+.button:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-flex;
+	margin-right: 10px;
+	background-image: url(images/icon-cart.svg);
+}
+
+.attribution {
+	display: grid;
+	row-gap: 1em;
+	color: white;
+	padding: 1em 3em;
+	justify-self: stretch;
+	border-radius: .8em;
+	background-color: rgba(31, 43, 61, 1);
+}
+
+.attribution div {
+	display: grid;
+	row-gap: 5px;
+}
+
+.attribution a {
+	color: rgba(153, 153, 153, .7);
+	margin-left: 1em;
+}
+
+@media ( min-width: 600px ) {
+	.container {
+		display: flex;
+		max-width: 600px;
+	}
+	
+	.img-header {
+		border-radius: 1em 0 0 1em;
+		background-image: url(images/image-product-desktop.jpg);
+	}
+}
